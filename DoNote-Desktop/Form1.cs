@@ -19,7 +19,15 @@ namespace DoNote_Desktop
 
     private void button1_Click(object sender, EventArgs e)
     {
-      throw new System.NotImplementedException();
+      var login = new LoginForm {Location = this.Location, StartPosition = this.StartPosition};
+      
+      login.Show();
+      this.Hide();
+    }
+
+    private void Form1_Load(object sender, EventArgs e)
+    {
+      // TODO: Some SID session checks using fs
     }
   }
 }

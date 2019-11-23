@@ -42,6 +42,7 @@
       this.pictureBox1.Image = ((System.Drawing.Image) (resources.GetObject("pictureBox1.Image")));
       this.pictureBox1.InitialImage = ((System.Drawing.Image) (resources.GetObject("pictureBox1.InitialImage")));
       this.pictureBox1.Location = new System.Drawing.Point(310, 105);
+      this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.pictureBox1.Name = "pictureBox1";
       this.pictureBox1.Size = new System.Drawing.Size(331, 321);
       this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -50,7 +51,8 @@
       // 
       // button1
       // 
-      this.button1.Location = new System.Drawing.Point(361, 493);
+      this.button1.Location = new System.Drawing.Point(361, 492);
+      this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.button1.Name = "button1";
       this.button1.Size = new System.Drawing.Size(230, 59);
       this.button1.TabIndex = 1;
@@ -67,10 +69,14 @@
       this.ClientSize = new System.Drawing.Size(946, 685);
       this.Controls.Add(this.button1);
       this.Controls.Add(this.pictureBox1);
+      this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
       this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+      this.MaximizeBox = false;
       this.Name = "Form1";
+      this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
       this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
       this.Text = "DoNote";
+      this.Load += new System.EventHandler(this.Form1_Load);
       ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).EndInit();
       this.ResumeLayout(false);
     }
