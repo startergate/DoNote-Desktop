@@ -37,7 +37,10 @@ namespace DoNote_Desktop
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(800, 562);
+      this.BackColor =
+        System.Drawing.Color.FromArgb(((int) (((byte) (61)))), ((int) (((byte) (65)))), ((int) (((byte) (77)))));
+      this.ClientSize = new System.Drawing.Size(946, 685);
+      this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
       this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
       this.Name = "LoginForm";
       this.Text = "Login - DoNote";
